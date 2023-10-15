@@ -554,3 +554,93 @@ margin-bottom: 10px;
     .form_contact textarea{
         width: 100%;
     }
+/*************************************************************/
+    /* services */
+
+    .section_services {
+        padding: 14px 0;
+        text-align: center;
+        min-height: 100vh;background-color: #f9f9f9;
+    }
+    
+    .we-offer-area .item {
+      background: #ffffff none repeat scroll 0 0;
+      border-left: 2px solid #00a01d;
+      box-shadow: 0 0 10px #cccccc;
+      overflow: hidden;
+      padding: 30px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .we-offer-area.text-center .item {
+      background: #ffffff none repeat scroll 0 0;
+      border: medium none;
+      text-align: center;
+      padding: 67px 40px 64px;
+    }
+    
+    .we-offer-area.text-center .item i {
+      background: #094b72;
+      border-radius: 50%;
+      color: #ffffff;
+      font-size: 40px;
+      height: 84px;
+      line-height: 80px;
+      position: relative;
+      text-align: center;
+      width: 84px;
+      z-index: 1;
+      transition: all 0.35s ease-in-out;
+      margin-bottom: 25px;
+    }
+    .we-offer-area .our-offer-items.less-carousel .equal-height {
+      margin-bottom: 30px;
+    }
+    .we-offer-area .item h4 {
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    
+    .we-offer-area .item p {
+      margin: 0;
+    }
+    
+    .we-offer-area .item::after {
+      background: #094b72 none repeat scroll 0 0;
+      content: "";
+      height: 100%;
+      left: -100%;
+      position: absolute;
+      top: 0;
+      transition: all 0.35s ease-in-out;
+      width: 100%;
+      z-index: -1;
+    }
+    
+    .we-offer-area .item:hover::after {
+      left: 0;
+    }
+    
+    .we-offer-area .item:hover i,
+    .we-offer-area .item:hover h4,
+    .we-offer-area .item:hover p {
+      color: #ffffff !important;
+    }
+    .we-offer-area.text-center .item:hover i {
+      background-color: #ffffff !important;
+      color: #094b72 !important;
+    }
+    .col-services{
+        flex: 0 0 31.2%;
+    
+    }
+    .row_services{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .section_services .container{
+        padding: 48px;
+    }
