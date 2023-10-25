@@ -15,15 +15,28 @@
         <div>
             <img class="img_logo" src="images/logo.svg" alt="Swiftfix" >
         </div>
+        <div class="button_navbar">
+            <a href="#" id="click_navbar">
+                <img src="images/nav.png" alt="button Nav" style="width: 2rem;">
+            </a>
+        </div>
         <nav>
             <ul class="nav-items">
                 <li class="nav-item"><a class="link-item" href="index.html" >Home</a></li>
-                <li class="nav-item"><a class="link-item" href="services.html" >Services</a></li>
+                <li class="nav-item" id="menu_services">
+                    <a class="link-item" href="services.html" >Services</a>
+                   <div id="container_sous_menu">
+                    <a href="services.html" class="sous_menu">Maintance</a>
+                    <a href="services.html" class="sous_menu">Equipment</a>
+                    <a href="services.html" class="sous_menu">Service</a>
+                   </div> 
+                </li>
                 <li class="nav-item"><a class="link-item" href="about.html" >About Us</a></li>
                 <li class="nav-item"><a class="link-item" href="contact.html" >Contact us</a></li>
             </ul>
             <div>
                 <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" id="text_search" placeholder="Search">
             </div>
         </nav>
     </header>
@@ -115,47 +128,120 @@
     <!-- testimonial -->
     <section class="section_testimonial">
         <h2 class="titre_testimonial">Clients Testimonial</h2>
-        <div class="container_testimonial">
-            <div class="col-3">
-                <div class="contenu_reviews">
-                    <h3>Incredible Experience</h3>
-                    <p class="review_p">We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly.</p>
-                </div>
-                <div class="review_design"></div>
-                <div class="div_review">
-                    <img src="images/Photo.png" class="img_review" alt="user">
-                    <div>
-                        <h3 class="nom_review">Sarah Bentaher</h3>
-                        <p class="p_review">CEO, MA Industires </p>
+        <div class="container_testimonial" style="display: block;">
+            <div class="reviews-slider">
+                <div class="reviews">
+                    <!-- review 1 -->
+                    <div class="col-2">
+                        <div class="contenu_reviews">
+                            <h3>Incredible Experience</h3>
+                            <p class="review_p">We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly.</p>
+                        </div>
+                        <div class="review_design"></div>
+                        <div class="div_review">
+                            <img src="images/Photo.png" class="img_review" alt="user">
+                            <div>
+                                <h3 class="nom_review">Sarah Bentaher</h3>
+                                <p class="p_review">CEO, MA Industires </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- review 2 -->
+                    <div class="col-2">
+                        <div class="contenu_reviews">
+                            <h3>Dependable, Responsive, Professional Partner</h3>
+                            <p class="review_p">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+                        </div>
+                        <div class="review_design"></div>
+                        <div class="div_review">
+                            <img src="images/photo2.png" class="img_review" alt="user">
+                            <div>
+                                <h3 class="nom_review">Salima Alami</h3>
+                                <p class="p_review">CEO, FOODSO GROUP </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- review 3 -->
+                    <div class="col-2">
+                        <div class="contenu_reviews">
+                            <h3>Dependable, Responsive, Professional Partner</h3>
+                            <p class="review_p">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+                        </div>
+                        <div class="review_design"></div>
+                        <div class="div_review">
+                            <img src="images/photo2.png" class="img_review" alt="user">
+                            <div>
+                                <h3 class="nom_review">Salima Alami</h3>
+                                <p class="p_review">CEO, FOODSO GROUP </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- review 4 -->
+                    <div class="col-2">
+                        <div class="contenu_reviews">
+                            <h3>Dependable, Responsive, Professional Partner</h3>
+                            <p class="review_p">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+                        </div>
+                        <div class="review_design"></div>
+                        <div class="div_review">
+                            <img src="images/photo2.png" class="img_review" alt="user">
+                            <div>
+                                <h3 class="nom_review">Salima Alami</h3>
+                                <p class="p_review">CEO, FOODSO GROUP </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- review 5 -->
+                    <div class="col-2">
+                        <div class="contenu_reviews">
+                            <h3>Dependable, Responsive, Professional Partner</h3>
+                            <p class="review_p">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+                        </div>
+                        <div class="review_design"></div>
+                        <div class="div_review">
+                            <img src="images/photo2.png" class="img_review" alt="user">
+                            <div>
+                                <h3 class="nom_review">Salima Alami</h3>
+                                <p class="p_review">CEO, FOODSO GROUP </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- review 6 -->
+                    <div class="col-2">
+                        <div class="contenu_reviews">
+                            <h3>Dependable, Responsive, Professional Partner</h3>
+                            <p class="review_p">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+                        </div>
+                        <div class="review_design"></div>
+                        <div class="div_review">
+                            <img src="images/photo2.png" class="img_review" alt="user">
+                            <div>
+                                <h3 class="nom_review">Salima Alami</h3>
+                                <p class="p_review">CEO, FOODSO GROUP </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="contenu_reviews">
-                    <h3>Dependable, Responsive, Professional Partner</h3>
-                    <p class="review_p">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
-                </div>
-                <div class="review_design"></div>
-                <div class="div_review">
-                    <img src="images/photo2.png" class="img_review" alt="user">
-                    <div>
-                        <h3 class="nom_review">Salima Alami</h3>
-                        <p class="p_review">CEO, FOODSO GROUP </p>
-                    </div>
-                </div>
+            <div class="slider-controls">
+                <span id="prev"><img class="arrows_carousel" src="images/left.png" alt="arrow_prev"></span>
+                <span id="next"><img class="arrows_carousel" src="images/right.png" alt="arrow_next"></span>
             </div>
         </div>
     </section>
 
     <!-- Complex -->
     <div class="section_complex">
-        <div>
+        <div class="container_complex">
             <h2 class="titre_testimonial">Complex Questions?</h2>
             <p class="p_banner" >Request for a personalized budget for your legal problem. We will send you a coupe options in 24 hours. You can have free consult , if a our first customer</p>
-            <button class="btn_call">
-            <i class="fa fa-phone" ></i>
-            <span class="btn_text_call">Call now</span>
-        </button>
+            <div class="div_button" style="width: 100%;">
+                <button class="btn_call">
+                    <i class="fa fa-phone" ></i>
+                    <span class="btn_text_call">Call now</span>
+                </button>
+            </div>
+            
         </div>
     </div>
 
@@ -213,5 +299,7 @@
         </div>
     </footer>
     
+    <script src="js/swiftfix.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

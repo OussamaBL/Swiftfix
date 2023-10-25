@@ -13,15 +13,28 @@
         <div>
             <img class="img_logo" src="images/logo.svg" alt="Swiftfix" >
         </div>
+        <div class="button_navbar">
+            <a href="#" id="click_navbar">
+                <img src="images/nav.png" alt="button Nav" style="width: 2rem;">
+            </a>
+        </div>
         <nav>
             <ul class="nav-items">
                 <li class="nav-item"><a class="link-item" href="index.html" >Home</a></li>
-                <li class="nav-item"><a class="link-item" href="services.html" >Services</a></li>
+                <li class="nav-item" id="menu_services">
+                    <a class="link-item" href="services.html" >Services</a>
+                   <div id="container_sous_menu">
+                    <a href="services.html" class="sous_menu">Maintance</a>
+                    <a href="services.html" class="sous_menu">Equipment</a>
+                    <a href="services.html" class="sous_menu">Service</a>
+                   </div> 
+                </li>
                 <li class="nav-item"><a class="link-item" href="about.html" >About Us</a></li>
                 <li class="nav-item"><a class="link-item" href="contact.html" >Contact us</a></li>
             </ul>
             <div>
-                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-search" onclick="search_input()" aria-hidden="true"></i>
+                <input type="text" id="text_search" placeholder="Search">
             </div>
         </nav>
     </header>
@@ -90,5 +103,6 @@
         </div>
     </footer>
 
+    <script src="js/swiftfix.js"></script>
 </body>
 </html>

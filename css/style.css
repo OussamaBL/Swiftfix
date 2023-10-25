@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-
+body{
+    overflow-x: hidden;
+}
 /* header */
 .img_logo {
     width: 10rem;
@@ -10,11 +12,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    position: fixed;
+    margin-top: -65px;
+    z-index: 999;
+    width: 100%;
     flex-direction: row;
+    border-bottom: 1px solid #00000021;
+}
+.button_navbar{
+    display: none;
 }
 
 nav {
-    display: flex !important;
+    display: flex ;
     flex-basis: auto;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -22,11 +33,84 @@ nav {
     justify-content: flex-end;
     align-items: center;
 }
+.sous_menu{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    display: block;
+    margin: 1rem 0rem;
+}
+#container_sous_menu{
+    background-color: #ffffff;
+                   border: 1px solid #0000002e;
+                   box-shadow: 2px 6px 20px 0px #00000036;
+                   width: 78px;
+                   padding: 1rem 2rem;
+                   position: absolute;
+                   top: 26px;
+                   left: -2.5rem;
+                   display: none;
+}
+#menu_services{
+    height: 28px;
+    position: relative;
+}
+/* #menu_services:hover #container_sous_menu{
+display: block;
+} */
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hr-line{
+    width: 60%;
+    margin: auto;
+}
+.faq-page {
+    color: #444;
+    cursor: pointer;
+    padding: 9px 15px 0px 80px;
+    margin-bottom: 0px;
+    width: 55%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.faq-body {
+    width: 50%;
+    padding: 0px 83px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    
+}
+.faq-page:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.section_faq h1{
+    text-align: center;
+}
+.active:after {
+    content: "\2796";
+}
 
+.section_faq{
+    margin: 4rem 0rem;
+    padding: 14px 0px;
+}
 .searsh {
     width: 18px;
 }
-
 .link-item {
     padding-right: 22px;
     text-decoration: auto;
@@ -37,6 +121,17 @@ nav {
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 1.5px;
+}
+#text_search{
+    display: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    margin-left: -37px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    border: 1px solid #0000003b;
+    border-radius: 15px;
 }
 
 /* Banner */
@@ -54,6 +149,7 @@ nav {
     height: 700px;
     background-size: 100% 100%;
     margin-bottom: -16px;
+    margin-top: 64px;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -232,6 +328,32 @@ nav {
 
 /******************************************************************/
 /* testimonial */
+.slider-controls{
+    margin-top: 3rem;
+}
+.reviews-slider {
+    overflow: hidden;
+    padding-top: 2rem;
+}
+
+.reviews {
+    display: flex;
+    gap: 5%;
+    transform: translateX(2%);
+    transition: transform 0.5s;
+    justify-content: space-between;
+}
+
+/* .col-3 {
+    width: 50%;
+} */
+.col-2{
+    flex: 0 0 45%;
+}
+.slider-controls button {
+    cursor: pointer;
+}
+
 
 .titre_testimonial {
     color: #2D2F30;
@@ -419,7 +541,7 @@ padding-top: 30px;color: white;padding-bottom: 39px;
 display: flex;
 }
 hr{
-height: 80px;
+height: 80px !important;
 }
 /****************************/
 .section_testimonial{
@@ -439,10 +561,10 @@ text-align: left;
 .section_complex{
 background-color: white;
 }
-.section_complex div{
+.container_complex{
 padding-top: 20px;width: 45rem;margin-left: 8rem;
 }
-.section_complex div .titre_testimonial{
+.container_complex .titre_testimonial{
 text-align: left !important;
 }
 /****************************/
@@ -473,7 +595,7 @@ margin-bottom: 10px;
 
 /*************************************************/
 .section_aboutus{
-    display: flex;margin-top: 25px;
+    display: flex;margin-top: 70px;
 }
 .section_aboutus > .col:nth-of-type(2){
     text-align: left;
@@ -506,7 +628,10 @@ margin-bottom: 10px;
     padding: 11px 45px;
     width: 12rem;
 }
-
+.msg_error{
+    color: red;
+    display: block;
+}
     .input_contact{
      width: 100%;
     border: none;
@@ -562,6 +687,7 @@ margin-bottom: 10px;
         padding: 14px 0;
         text-align: center;
         background-color: #f9f9f9;
+        margin-top: 71px;
     }
     
     .we-offer-area .item {
@@ -638,33 +764,106 @@ margin-bottom: 10px;
     .section_services .container{
         padding: 48px;
     }
+    .section_contact{
+        margin-top: 67px;
+    }
+    /********************************/
+    .faq-heading{
+        border-bottom: #777;
+        padding: 20px 60px;
+    }
+    .faq-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .hr-line{
+        width: 60%;
+        margin: auto;
+    }
+    .faq-page {
+        color: #444;
+        cursor: pointer;
+        padding: 9px 15px 0px 80px;
+        margin-bottom: 0px;
+        width: 55%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
+    .faq-body {
+        width: 50%;
+        padding: 0px 83px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        
+    }
+    .faq-page:after {
+        content: '\02795';
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .active:after {
+        content: "\2796";
+    }
+
+    .section_faq{
+        margin: 4rem 0rem;
+    }
+    .arrows_carousel{
+        width: 2rem;
+        cursor: pointer;
+        margin-right: 1rem;
+    }
 
     /**********************************************/
-    @media only screen and (max-width: 600px) and (min-width: 320px)  {
+    @media screen and (max-width: 767px) {
+        .section_faq{
+            margin: 9rem 0rem 0rem 0rem;
+        }
+        #menu_services{
+            width: 78px;
+            margin: 0 auto;
+        }
+        #container_sous_menu{
+            top: 26px;
+            left: -2.5rem;
+        }
         /* header */
         header{
             display: block;
-        }
-        header > nav:first-of-type {
-            text-align: center;
-            width: 100%;
+            padding: 17px 0px;
         }
         header > div:first-of-type {
             width: 50%;
+            padding-left: 2rem;
+            text-align: left;
+            display: inline-block;
+        }
+        .button_navbar{
+            display: inline-block;
+            float: right;
+            margin-right: 1rem;
+            margin-top: 0.5rem;
         }
         .nav-items{
-            width: 83%;
+            width: 100%;
+            padding-left: 0;
             display: block !important;
         }
         header nav div{
-            display: none;
-        }
-        header > div:first-of-type{
             margin: 0 auto;
+            padding-right: 18px;
         }
         nav{
-            display: block !important;
+            display: none ;
             margin: 0 auto;
+            text-align: center;
+            width: 100% !important;
         }
         /* services */
         .col-services{
@@ -672,9 +871,13 @@ margin-bottom: 10px;
         }
         
         /* about us */
+        .section_services{
+            margin-top: 68px;
+        }
         .section_aboutus {
             display: block;
             margin-top: 66px;
+            padding-top: 37px;
         }
         .img_aboutus {
             width: 17rem;
@@ -685,6 +888,10 @@ margin-bottom: 10px;
             padding-left: 20px;
         }
         /* contact */
+        .section_contact{
+            margin-top: 62px;
+            padding-top: 10px;
+        }
         .container_contact {
             display: block;
         }
@@ -708,15 +915,16 @@ margin-bottom: 10px;
         /* home */
         .contenu_banner_col {
             margin-left: 0px;
-    padding: 0px 11px;
-    text-align: center;
+            padding: 0px 11px;
+            text-align: center;
         }
         .p_banner{
             text-align: center;
-    width: 100%;
+            width: 100%;
         }
         .section_banner{
             display: block;
+            height: auto;
         }
         .titre_banner{
             font-size: 40px;
@@ -727,7 +935,7 @@ margin-bottom: 10px;
         .section_complex_question {
             background-color: #f8f8f8;
             display: block;
-            margin-top: 28rem;
+            margin-top: 3rem;
         }
         .first_col {
             width: 95%;
@@ -748,6 +956,13 @@ margin-bottom: 10px;
         .row{
             display: block;
         }
+        .reviews{
+            gap: 0%;
+            transform: translateX(0%);
+        }
+        .col-2{
+            flex: 0 0 100%;
+        }
         .container_testimonial{
             display: block;
         }
@@ -766,13 +981,16 @@ margin-bottom: 10px;
         .p_banner{
             font-size: 16px;
         }
-        .section_complex div {
+        .container_complex{
             width: 100%;
             margin-left: 0rem;
         }
-        .btn_call{
-            margin-left: 32%;
+        .div_button{
+            text-align: center;
         }
+        /* .btn_call{
+            margin-left: 32%;
+        } */
         .info_banner{
             display: none;
         }
@@ -815,5 +1033,69 @@ margin-bottom: 10px;
         .div_bottom_footer > .col:first-of-type p {
             padding-left: 0rem;
             text-align: center;
+        }
+        .list_icons_footer {
+            text-align: center;
+            width: 100%;
+        }
+    }
+    
+    @media screen and (min-width: 767px) and (max-width: 1023px){
+        header > nav:first-of-type{
+            width: 65%;
+        }
+        .contenu_banner_col{
+            margin-left: 22px;
+        }
+        .titre_banner{
+            font-size: 56px;
+        }
+        .img_banner{
+            right: 42px;
+        }
+        .first_col{
+            margin-left: 6%;
+        }
+        .col_help{
+            margin-right: 1em;
+            height: 249px;
+        }
+        .titre_help{
+            font-size: 16px;
+        }
+        .we-offer-area .item{
+            height: 286px;
+        }
+        .img_aboutus {
+            width: 24rem;
+            margin-left: 0rem;
+            margin-top: 3rem;
+        }
+        .container_contact{
+            display: block;
+        }
+        .container_contact .col{
+            text-align: center;
+            max-width: 100% !important;
+        }
+        .container_contact .col-3{
+            max-width: 75%;
+            margin: 0 auto;
+        }
+        .form_contact div{
+            margin-left: 0px;
+        }
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px){
+        .form_contact div{
+            margin-left: 24px;
+        }
+        .we-offer-area .item{
+            height: 286px;
+        }
+    }
+    @media screen and (max-width:520px){
+        .faq-page{
+            width: 85%;
         }
     }

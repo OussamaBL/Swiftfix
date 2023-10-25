@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-    <title>SwiftFix About</title>
+    <title>SwiftFix a propos</title>
 </head>
-<body style="margin: 7px 0;">
+<body>
+
     <header>
         <div>
             <img class="img_logo" src="images/logo.svg" alt="Swiftfix" >
@@ -34,43 +34,69 @@
                 <li class="nav-item"><a class="link-item" href="contact.html" >Contact us</a></li>
             </ul>
             <div>
-                <i class="fa fa-search" onclick="search_input()" aria-hidden="true"></i>
+                <i class="fa fa-search" aria-hidden="true"></i>
                 <input type="text" id="text_search" placeholder="Search">
             </div>
         </nav>
     </header>
 
-    <section class="section_contact">
-        <h1><span>Con</span>tact</h1>
-        <div class="container_contact">
-            <div class="col">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13497.578261617813!2d-8.5216487!3d32.2474646!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaefdd4fcbbdbc1%3A0x846cbd9f328a7bdb!2sYouCode!5e0!3m2!1sar!2sma!4v1697135968041!5m2!1sar!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="section_faq">
+        <h1>General Questions</h1>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h2 class="faq-page">What is an FAQ Page?</h2>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.Perspiciatis, porro!
+                    </p>
+                </div>
             </div>
-            <div class="col-3">
-                        <form id="form_contact" name="form_contact" class="form_contact">
-                            <div>
-                                <span class="msg_error" id="error_full_name"></span>
-                                <input type="text" class="input_contact" name="full_name" placeholder="Enter full name"> 
-                                <span class="msg_error" id="error_email"></span>
-                                <input type="text" class="input_contact" name="email" placeholder="Enter email"> 
-                                <span class="msg_error" id="error_subject"></span>
-                                <select class="select_contact" name="subject">
-                                    <option value="Select a subject" selected>Select a subject</option>
-                                    <option value="About Services">About Services</option>
-                                    <option value="Probleme technique">Probleme technique</option>
-                                    <option value="Other">Other</option>
-                                </select> 
-                                <span class="msg_error" id="error_message"></span>
-                                <textarea class="select_contact" name="message" cols="30" rows="10" placeholder="Enter the message"></textarea> 
-                                <button type="submit" class="btn_about">Send</button>
-                            </div>
-                        </form>
+        </section>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h2 class="faq-page">What is an FAQ Page?</h2>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.Perspiciatis, porro!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h2 class="faq-page">What is an FAQ Page?</h2>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.Perspiciatis, porro!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Complex -->
+    <div class="section_complex">
+        <div class="container_complex">
+            <h2 class="titre_testimonial">Complex Questions?</h2>
+            <p class="p_banner" >Request for a personalized budget for your legal problem. We will send you a coupe options in 24 hours. You can have free consult , if a our first customer</p>
+            <div class="div_button" style="width: 100%;">
+                <button class="btn_call">
+                    <i class="fa fa-phone" ></i>
+                    <span class="btn_text_call">Call now</span>
+                </button>
             </div>
             
         </div>
-        
-        
-    </section>
+    </div>
 
     <footer>
         <div class="div_footer">
@@ -124,8 +150,8 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="js/swiftfix.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="js/propos.js"></script>
 </body>
 </html>
