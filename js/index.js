@@ -9,7 +9,7 @@ prevButton.addEventListener('click', () => {
     }
 });
 nextButton.addEventListener('click', () => {
-    if (slideIndex < 2) { // Change this number to match the total number of reviews
+    if (slideIndex < 2) { 
         slideIndex++;
         updateSlider();
     }

@@ -689,6 +689,59 @@ margin-bottom: 10px;
         background-color: #f9f9f9;
         margin-top: 71px;
     }
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 999; 
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgba(0,0,0,0.4); 
+      }
+      
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s
+      }
+      
+      @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+      }
+      .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 1rem;
+      }
+      
+      .close:hover{
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .modal-header{
+        padding: 2px 16px;
+        background-color: #094B72;
+        color: white;
+      }
+      
+      .modal-body {padding: 2px 16px;}
+      .myBtn{
+          margin-top: 24px;
+          width: 14rem;
+      }
     
     .we-offer-area .item {
     background: #ffffff;
@@ -823,7 +876,7 @@ margin-bottom: 10px;
     /**********************************************/
     @media screen and (max-width: 767px) {
         .section_faq{
-            margin: 9rem 0rem 0rem 0rem;
+            margin: 4rem 0rem 0rem 0rem;
         }
         #menu_services{
             width: 78px;
